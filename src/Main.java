@@ -6,7 +6,7 @@ public class Main {
         Chatbot bot2 = new Chatbot("naltoma");
         bot1.greeting();
         bot2.greeting();
-        bot2.setName("ほげ");
+        bot2.setName("差別用語");
         bot2.greeting();
     }
     

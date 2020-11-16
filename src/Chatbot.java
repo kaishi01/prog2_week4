@@ -1,6 +1,7 @@
 //演習2_8の途中。
 public class Chatbot{
     private String name;
+    String no = "差別用語";
     public Chatbot(){
         System.out.println("チャットボットの原型を作成します。");
     }
@@ -12,6 +13,11 @@ public class Chatbot{
         System.out.println("はじめまして" + this.name + "です。よろ！");
     }
     public void setName(String name2){
-        name = name2;
+        if( name2.equals(no)){
+            System.out.println("禁止されています");
+        }else{
+            System.out.println("ボット名を" + name + "から" + name2 + "へと変更します");
+            name = name2;
+        }
     }
 }
